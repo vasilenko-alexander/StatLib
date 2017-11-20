@@ -16,7 +16,7 @@ env:
     -TARGET_CPU=amd64 BUILD_CONFIGURATION=Debug
     -TARGET_CPU=amd64 BUILD_CONFIGURATION=Release
 
-install:
+script:
     -mkdir build
     -cd build
     -cmake .. -DCMAKE_BUILD_TYPE=$BUILD_CONFIGURATION -DTARGET_CPU=$TARGET_CPU && make
